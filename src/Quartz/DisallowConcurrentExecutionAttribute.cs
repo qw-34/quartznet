@@ -33,7 +33,7 @@ namespace Quartz
     /// <seealso cref="PersistJobDataAfterExecutionAttribute" />
     /// <author>James House</author>
     /// <author>Marko Lahma (.NET)</author>
-    [AttributeUsage(AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface)]
     public class DisallowConcurrentExecutionAttribute : Attribute
     {
     }
